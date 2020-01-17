@@ -9,7 +9,7 @@ subproblem: for i to j
 recursive equation:
 
 
-e[i,j]=		
+	e[i,j]=		
 		0	j=i-1
 
 		min{e[i,r-1]+e[r+1,j]+w(i,j)}	i<=j,1<=r<=j
