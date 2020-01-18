@@ -19,3 +19,5 @@ and
 e[i,j] means the expected search cost of key[i] to key[j]
 
 w[i,j] comes when a subproblem yields, and the depth of each keys in the subproblem will be +1, so add the sum of all the relative probabilities with the left child's e[i,r-1] and the right child's e[r+1,j], we can get the e[i,j].
+
+Actually, we could acknowledge, from the recursive equation, that the shorter subproblems should be computed first. Thus, the external for-loop used l(length) as the cyclic variable in the code.
